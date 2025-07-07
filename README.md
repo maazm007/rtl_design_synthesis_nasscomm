@@ -3,7 +3,8 @@
 ## ***Basic Details***
 
 **Name:** Maaz Mahmood  
-**College:** KIET Group of Institutions    
+**College:** KIET Group of Institutions  
+
 **Email ID:** maazms999@gmail.com  
 **GitHub Profile:** [maazm007](https://github.com/maazm007?tab=repositories)  
 **LinkedIN Profile:** [maazm-ece-vlsi](https://www.linkedin.com/in/maazms-ece-vlsi/)
