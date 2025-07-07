@@ -223,8 +223,9 @@ Let's take another example of Boolean expression ```Y = A ? (B ? (A & C) : C) : 
 Above Boolean expression can be synthesized using two 2x1 Multiplexer. Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="816" alt="Pic15" src="https://github.com/user-attachments/assets/cfd7529d-9fc6-4a35-ad65-dec673446a50" />
+<p>  </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog opt_check4.v
@@ -241,8 +242,9 @@ Let's take another example of Verilog file ```multiple_module_opt.v```
 Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
 ![Pic17](https://github.com/user-attachments/assets/f226ea9a-190f-499f-a36d-1f576cec6b6e)
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog multiple_module_opt.v
@@ -260,8 +262,9 @@ Let's take another example of Verilog file ```multiple_module_opt2.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 ![Pic19](https://github.com/user-attachments/assets/f1fde985-43db-481e-b303-981850c53d02)
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog multiple_module_opt2.v
@@ -280,8 +283,9 @@ Let's take 5 sequential circuits one by one and analyze their behavior and under
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="460" alt="Pic21" src="https://github.com/user-attachments/assets/f22dbf5b-a74b-41fd-8f48-5d058042c57d" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog dff_const1.v
@@ -301,8 +305,9 @@ Let's take another example of Verilog file ```dff_const2.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="499" alt="Pic24" src="https://github.com/user-attachments/assets/fb5bd8c9-4c75-4b50-9024-3605e9d3086b" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog dff_const2.v
@@ -322,8 +327,9 @@ Let's take another example of Verilog file ```dff_const3.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="619" alt="Pic27" src="https://github.com/user-attachments/assets/d3bd4bbf-35b7-4e94-901d-80754d921766" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog dff_const3.v
@@ -344,8 +350,9 @@ Let's take another example of Verilog file ```dff_const4.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="737" alt="Pic31" src="https://github.com/user-attachments/assets/ad9f8098-897f-4f15-9d77-083277f14250" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog dff_const4.v
@@ -365,8 +372,9 @@ Let's take another example of Verilog file ```dff_const5.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="733" alt="Pic34" src="https://github.com/user-attachments/assets/169e7719-2498-4a9a-880e-6a50901d8516" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog dff_const5.v
@@ -387,8 +395,9 @@ Let's take another example of Verilog file ```counter_opt.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="800" alt="Pic38" src="https://github.com/user-attachments/assets/ea281381-1fd3-4d7e-aa96-7cc22c919554" />
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog counter_opt.v
