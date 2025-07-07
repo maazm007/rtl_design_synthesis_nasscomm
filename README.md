@@ -96,10 +96,11 @@ The ```.lib``` file contains following information:
 * Timing Information such as Setup Time, Hold Time, Clock-to-Q delay, Slew Rates
 * Power Information like Switching Power, Leakage Power, etc.
 
-**Following image shows the difference between different flavors of AND Gate:**
+***Following image shows the difference between different flavors of AND Gate:***
 
 <img width="960" alt="Pic5" src="https://github.com/user-attachments/assets/904e3825-23b5-414d-8b2e-e3f50cbba55a" />
 
+  
 > ***All the three files belongs to 2-input AND Gate, but their Area and Leakage Powers are different. Larger area of gates signifies Wide Transistors***
 
 ## ***Lab 5: Hierarchical vs Flat synthesis using multiple_modules.v***
