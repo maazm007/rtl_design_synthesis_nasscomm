@@ -203,9 +203,10 @@ There are four techniques for Sequential Optimization:
 Let's take an example of Boolean expression ```Y = A ? B : 1```  
 Above Boolean expression can be synthesized into 2x1 Multiplexer. Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
-<img width="488" alt="Pic13" src="https://github.com/user-attachments/assets/83f1989d-3ebe-4b43-bec7-311a12fea53a" />
+<img width="488" alt="Pic13" src="https://github.com/user-attachments/assets/83f1989d-3ebe-4b43-bec7-311a12fea53a" />  
+<p> </p>
 
-Following are the commands to perform optimization:
+***Following are the commands to perform optimization:***
 ```
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog opt_check2.v
