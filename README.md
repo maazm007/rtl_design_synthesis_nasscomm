@@ -200,7 +200,7 @@ There are four techniques for Sequential Optimization:
 * **Sequential Logic Cleaning**  
 
 ## ***Lab 8: Combinational Logic Optimization***
-Let's take an example of Boolean expression ```Y = A ? B : 1```  
+Let's take an example of Boolean expression ```Y = A ? 1 : B```  
 Above Boolean expression can be synthesized into 2x1 Multiplexer. Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
 <img width="488" alt="Pic13" src="https://github.com/user-attachments/assets/83f1989d-3ebe-4b43-bec7-311a12fea53a" />  
