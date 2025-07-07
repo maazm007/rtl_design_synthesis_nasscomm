@@ -49,9 +49,9 @@ After running this command, ```.vcd``` file will be generated. VCD stands for **
 gtkwave tb_good_mux.vcd
 ```
 
-[Picture 1]
+![Pic1](https://github.com/user-attachments/assets/c2cd11f0-b489-44b1-b03c-99a4cfee8e72)
 
-[Picture 2]
+<img width="960" alt="Pic2" src="https://github.com/user-attachments/assets/a59685f6-9a2e-4c0b-bf32-cc8a76c5d2cd" />
 
 ### ***What is Synthesis?***
 Synthesis refers to the automated process of converting a high-level hardware description written in Verilog or VHDL, into the gate level netlist consisting of logic gates, flip-flops, which can be physically implemented on silicon. Here, we will be using ```Yosys``` tool to perform the synthesis.
@@ -73,9 +73,9 @@ write_verilog -noattr good_mux_netlist.v
 ### ***What is abc command?***
 ```abc``` is the command used for technology mapping. It maps the optimized logic circuit to the actual gates present in a technology library.
 
-[Picture 3]
+![Pic3](https://github.com/user-attachments/assets/b24fb60a-acc8-4999-b64e-1f978bc30821)
 
-[Picture 4]
+<img width="960" alt="Pic4" src="https://github.com/user-attachments/assets/45d833ec-fd55-49bc-b475-0887d0d6eb36" />
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -98,9 +98,9 @@ The ```.lib``` file contains following information:
 
 Following image shows the difference between different flavors of AND Gate:
 
-[Picture 5]
+<img width="960" alt="Pic5" src="https://github.com/user-attachments/assets/904e3825-23b5-414d-8b2e-e3f50cbba55a" />
 
-**All the three files belongs to 2-input AND Gate, but their Area and Leakage Powers are different. Larger area of gates signifies Wide Transistors**
+***All the three files belongs to 2-input AND Gate, but their Area and Leakage Powers are different. Larger area of gates signifies Wide Transistors***
 
 ## ***Lab 5: Hierarchical vs Flat synthesis using multiple_modules.v***
 We use Hierarchical Synthesis when we want to preserve the module hierarchy. For Example, ```multiple_modules.v``` contains two sub modules, so in order to preserve both the submodules in the synthesis, we choose Hierarchical Synthesis. Following are the commands to perform the hierarchical synthesis of ```multiple_modules.v```:
@@ -113,7 +113,7 @@ show multiple_modules
 write_verilog -noattr multiple_modules_hier.v
 ```
 
-[Picture 6]
+![Pic6](https://github.com/user-attachments/assets/81e7b78b-1be0-4925-b831-3caf91242705)
 
 We use Flat Synthesis when we don't want to preserve the modules hierarchy. Here all the submodules are merged into the single module. Flat Synthesis is generally preferred for simpler designs. Following are the commands to perform flat synthesis of ```multiple_modules.v```:
 ```
@@ -126,9 +126,9 @@ show
 write_verilog -noattr multiple_modules_flat.v
 ```
 
-[Picture 7]
+![Pic7](https://github.com/user-attachments/assets/b4223d8d-922a-41cb-8a79-b5713c12d66d)
 
-[Picture 8]
+<img width="960" alt="Pic8" src="https://github.com/user-attachments/assets/376cff67-7d29-4dff-a76f-711295373428" />
 
 ## ***Lab 7: Synchronous and Asynchronous Set/Reset***
 In Synchronous Circuits, Set/Reset pin is synchronized with the edge of the clock (either posedge or negedge). Set/Reset signal is only sampled on the clock edges. While in Asynchronous Circuits, Set/Reset pin is independent of the edge of clock. Set/Reset signal holds the higher priority in the case of asynchronous circuits.
@@ -143,7 +143,7 @@ iverilog dff_asyncres.v tb_dff_asyncres.v
 gtkwave tb_dff_asyncres.vcd
 ```
 
-[Picture 9]
+<img width="960" alt="Pic9" src="https://github.com/user-attachments/assets/eda76ae0-4d80-409c-9972-cc24ba3ae3fe" />
 
 ```
 yosys
@@ -156,7 +156,7 @@ show
 write_verilog -noattr dff_asyncres_netlist.v
 ```
 
-[Picture 10]
+![Pic10](https://github.com/user-attachments/assets/a0dfb330-0ec2-46e7-b9ce-3d19eafa27e3)
 
 * D Flip-Flop with Synchronous Reset
 **Following are the commands:**
@@ -166,7 +166,7 @@ iverilog dff_syncres.v tb_dff_syncres.v
 gtkwave tb_dff_syncres.vcd
 ```
 
-[Picture 11]
+<img width="960" alt="Pic11" src="https://github.com/user-attachments/assets/cea9809e-7d06-4e56-b96c-ee18b5f08d5f" />
 
 ```
 yosys
@@ -179,7 +179,7 @@ show
 write_verilog -noattr dff_syncres_netlist.v
 ```
 
-[Picture 12]
+![Pic12](https://github.com/user-attachments/assets/d8d619d5-a415-4ba5-9702-83a926b91cc3)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
@@ -200,7 +200,7 @@ There are four techniques for Sequential Optimization:
 Let's take an example of Boolean expression ```Y = A ? B : 1```  
 Above Boolean expression can be synthesized into 2x1 Multiplexer. Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 13]
+<img width="488" alt="Pic13" src="https://github.com/user-attachments/assets/83f1989d-3ebe-4b43-bec7-311a12fea53a" />
 
 Following are the commands to perform optimization:
 ```
@@ -213,12 +213,12 @@ show
 write_verilog opt_check2_netlist.v
 ```
 
-[Picture 14]
+![Pic14](https://github.com/user-attachments/assets/d4989caf-d812-427b-ae63-cb70e728ba39)
 
 Let's take another example of Boolean expression ```Y = A ? (B ? (A & C) : C) : (!C)```
 Above Boolean expression can be synthesized using two 2x1 Multiplexer. Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 15]
+<img width="816" alt="Pic15" src="https://github.com/user-attachments/assets/cfd7529d-9fc6-4a35-ad65-dec673446a50" />
 
 Following are the commands to perform optimization:
 ```
@@ -231,12 +231,12 @@ show
 write_verilog opt_check4_netlist.v
 ```
 
-[Picture 16]
+![Pic16](https://github.com/user-attachments/assets/8594c113-51ec-4d5d-b57a-f45c229b3c61)
 
 Let's take another example of Verilog file ```multiple_module_opt.v```
 Below image represent the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 17]
+![Pic17](https://github.com/user-attachments/assets/f226ea9a-190f-499f-a36d-1f576cec6b6e)
 
 Following are the commands to perform optimization:
 ```
@@ -250,12 +250,12 @@ show
 write_verilog multiple_module_opt_netlist.v
 ```
 
-[Picture 18]
+![Pic18](https://github.com/user-attachments/assets/4a893d0a-f666-499b-813e-0b319cb41380)
 
 Let's take another example of Verilog file ```multiple_module_opt2.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 19]
+![Pic19](https://github.com/user-attachments/assets/f1fde985-43db-481e-b303-981850c53d02)
 
 Following are the commands to perform optimization:
 ```
@@ -269,13 +269,13 @@ show
 write_verilog multiple_module_opt2_netlist.v
 ```
 
-[Picture 20]
+![Pic20](https://github.com/user-attachments/assets/db17e83f-6bab-4d85-80cd-ab5701cc3bbd)
 
 ## ***Lab 9: Sequential Logic Optimization***
 Let's take 5 sequential circuits one by one and analyze their behavior and understands the possible optimization that can be done. Starting with Verilog file ```dff_const1.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 21]
+<img width="460" alt="Pic21" src="https://github.com/user-attachments/assets/f22dbf5b-a74b-41fd-8f48-5d058042c57d" />
 
 Following are the commands to perform optimization:
 ```
@@ -287,16 +287,16 @@ abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky1
 show
 ```
 
-[Picture 22]
+![Pic22](https://github.com/user-attachments/assets/8a195754-9f65-4b35-98f0-3ac8bb88f552)
 
-[Picture 23]
+![Pic23](https://github.com/user-attachments/assets/2bbed217-42b2-4173-b391-fc59b1280afc)
 
 ***Conclusion: We expected one D Flip-Flop through our logic simulation. Bingo! One D Flip-Flop has been inferred after synthesizing the circuit***
 
 Let's take another example of Verilog file ```dff_const2.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 24]
+<img width="499" alt="Pic24" src="https://github.com/user-attachments/assets/fb5bd8c9-4c75-4b50-9024-3605e9d3086b" />
 
 Following are the commands to perform optimization:
 ```
@@ -308,16 +308,16 @@ abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky1
 show
 ```
 
-[Picture 25]
+![Pic25](https://github.com/user-attachments/assets/bb52a0f3-1640-4c59-ba37-29ffc70428e0)
 
-[Picture 26]
+![Pic26](https://github.com/user-attachments/assets/0e53a72f-0e6e-4e60-b6fa-31f64a4d3c4f)
 
 ***Conclusion: We expected one D Flip-Flop through our logic simulation. But we found that output Q remains 1 irrespective of the input. Hence the logic has been optimized after synthesis***
 
 Let's take another example of Verilog file ```dff_const3.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 27]
+<img width="619" alt="Pic27" src="https://github.com/user-attachments/assets/d3bd4bbf-35b7-4e94-901d-80754d921766" />
 
 Following are the commands to perform optimization:
 ```
@@ -328,18 +328,18 @@ dfflibmap -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/li
 abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
-[Picture 28]
+![Pic28](https://github.com/user-attachments/assets/87a6626d-71f5-4ab8-9a38-2d100ae623ad)
 
-[Picture 29]
+<img width="248" alt="Pic29" src="https://github.com/user-attachments/assets/b6bf76d1-30d8-4b46-a354-79b6263ae065" />
 
-[Picture 30]
+![Pic30](https://github.com/user-attachments/assets/0b02391d-157d-4918-b996-0727fc03e050)
 
 ***Conclusion: We expected two D Flip-Flop through our logic simulation. Bingo! Two D Flip-Flop has been inferred after synthesizing the circuit***
 
 Let's take another example of Verilog file ```dff_const4.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 31]
+<img width="737" alt="Pic31" src="https://github.com/user-attachments/assets/ad9f8098-897f-4f15-9d77-083277f14250" />
 
 Following are the commands to perform optimization:
 ```
@@ -350,16 +350,17 @@ dfflibmap -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/li
 abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
-[Picture 32]
 
-[Picture 33]
+![Pic32](https://github.com/user-attachments/assets/68228e99-012e-4261-98d0-7f923fd3a300)
+
+![Pic33](https://github.com/user-attachments/assets/154cfc85-ab5d-4bda-bf9e-515935faf0ca)
 
 ***Conclusion: We expected two D Flip-Flop through our logic simulation. But our logic got optimized and uses no D Flip-Flop after synthesis***
 
 Let's take another example of Verilog file ```dff_const5.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 34]
+<img width="733" alt="Pic34" src="https://github.com/user-attachments/assets/169e7719-2498-4a9a-880e-6a50901d8516" />
 
 Following are the commands to perform optimization:
 ```
@@ -370,19 +371,18 @@ dfflibmap -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/li
 abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
+![Pic35](https://github.com/user-attachments/assets/685cb064-a9e1-4c5e-bb01-f5b97578ee0a)
 
-[Picture 35]
+<img width="242" alt="Pic36" src="https://github.com/user-attachments/assets/8e35c1a0-e04e-466f-9702-6bad05e67d02" />
 
-[Picture 36]
-
-[Picture 37]
+![Pic37](https://github.com/user-attachments/assets/de06970c-b048-4411-af72-bd733f08cf14)
 
 ***Conclusion: We expected two D Flip-Flop through our logic simulation. Bingo! Two D Flip-Flop has been inferred after synthesizing the circuit***
 
 Let's take another example of Verilog file ```counter_opt.v```
 Below image represents the block diagram, along with the logic optimization using Boolean theorems.
 
-[Picture 38]
+<img width="800" alt="Pic38" src="https://github.com/user-attachments/assets/ea281381-1fd3-4d7e-aa96-7cc22c919554" />
 
 Following are the commands to perform optimization:
 ```
@@ -394,9 +394,9 @@ abc -liberty /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky1
 show
 ```
 
-[Picture 39] 
+![Pic39](https://github.com/user-attachments/assets/1dae5a9f-943e-4853-b8e3-fcb4c68aa8ed)
 
-[Picture 40]
+![Pic40](https://github.com/user-attachments/assets/c3a9c5a8-0192-42f8-a624-d765dda3db6e)
 
 ***Conclusion: We expected three D Flip-Flop through our logic simulation. But only one D Flip-Flop has been inferred after synthesizing the circuit. Because of presence of Unused Outputs, the logic has been optimized***
 
