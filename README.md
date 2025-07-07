@@ -136,8 +136,8 @@ In Synchronous Circuits, Set/Reset pin is synchronized with the edge of the cloc
 
 ***Now, we are going to perform the simulation and synthesis of D Flip-Flop using Synchronous and Asynchronous Set/Reset***
 
-* D Flip-Flop with Asynchronous Reset
-<p> </p>  **Following are the commands:**   
+* D Flip-Flop with Asynchronous Reset<p> </p>
+**Following are the commands:**   
 <p> </p>   
 
 
@@ -163,8 +163,8 @@ write_verilog -noattr dff_asyncres_netlist.v
 
 ![Pic10](https://github.com/user-attachments/assets/a0dfb330-0ec2-46e7-b9ce-3d19eafa27e3)
 
-* D Flip-Flop with Synchronous Reset
-<p> </p> **Following are the commands:** 
+* D Flip-Flop with Synchronous Reset <p> </p>
+**Following are the commands:** 
 <p> </p>   
 
 
