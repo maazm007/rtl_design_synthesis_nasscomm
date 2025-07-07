@@ -134,7 +134,7 @@ write_verilog -noattr multiple_modules_flat.v
 ## ***Lab 7: Synchronous and Asynchronous Set/Reset***
 In Synchronous Circuits, Set/Reset pin is synchronized with the edge of the clock (either posedge or negedge). Set/Reset signal is only sampled on the clock edges. While in Asynchronous Circuits, Set/Reset pin is independent of the edge of clock. Set/Reset signal holds the higher priority in the case of asynchronous circuits.
 
-***Now, we are goin to perform the simulation and synthesis of D Flip-Flop using Synchronous and Asynchronous Set/Reset***
+***Now, we are going to perform the simulation and synthesis of D Flip-Flop using Synchronous and Asynchronous Set/Reset***
 
 * D Flip-Flop with Asynchronous Reset
 **Following are the commands:**
@@ -145,7 +145,7 @@ gtkwave tb_dff_asyncres.vcd
 ```
 
 <img width="960" alt="Pic9" src="https://github.com/user-attachments/assets/eda76ae0-4d80-409c-9972-cc24ba3ae3fe" />
-
+<br>
 ```
 yosys
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -168,7 +168,7 @@ gtkwave tb_dff_syncres.vcd
 ```
 
 <img width="960" alt="Pic11" src="https://github.com/user-attachments/assets/cea9809e-7d06-4e56-b96c-ee18b5f08d5f" />
-
+<br>
 ```
 yosys
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
