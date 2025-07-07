@@ -145,7 +145,8 @@ gtkwave tb_dff_asyncres.vcd
 ```
 
 <img width="960" alt="Pic9" src="https://github.com/user-attachments/assets/eda76ae0-4d80-409c-9972-cc24ba3ae3fe" />
-<br/>
+<p> </p>  
+
 ```
 yosys
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -168,7 +169,8 @@ gtkwave tb_dff_syncres.vcd
 ```
 
 <img width="960" alt="Pic11" src="https://github.com/user-attachments/assets/cea9809e-7d06-4e56-b96c-ee18b5f08d5f" />
-<p> </p>
+<p> </p>  
+
 ```
 yosys
 read_liberty -lib /home/maazm007/Desktop/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
